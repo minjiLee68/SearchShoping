@@ -22,5 +22,5 @@ struct Search: Codable {
     let brand: String
     let category1: String
     let category2: String
-    let productId: String
+    let link: String
 }

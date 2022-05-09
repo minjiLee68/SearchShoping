@@ -16,6 +16,7 @@
 		0AB1511F2828DBDA00AF1F43 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1511E2828DBDA00AF1F43 /* SearchViewController.swift */; };
 		0AB151212828DBE400AF1F43 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB151202828DBE400AF1F43 /* DetailViewController.swift */; };
 		0AB151242828E67800AF1F43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0AB151232828E67800AF1F43 /* Kingfisher */; };
+		EF0734B46963D28FE437F032 /* Pods_SearchShoping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EB0F5E337698E32F6DE44D /* Pods_SearchShoping.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		0AB1511C2828D6E800AF1F43 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		0AB1511E2828DBDA00AF1F43 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0AB151202828DBE400AF1F43 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D7EB0F5E337698E32F6DE44D /* Pods_SearchShoping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchShoping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E6BF7A01EFC3120381E260 /* Pods-SearchShoping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchShoping.release.xcconfig"; path = "Target Support Files/Pods-SearchShoping/Pods-SearchShoping.release.xcconfig"; sourceTree = "<group>"; };
+		F6BD6F5D374111F700FB4647 /* Pods-SearchShoping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchShoping.debug.xcconfig"; path = "Target Support Files/Pods-SearchShoping/Pods-SearchShoping.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB151242828E67800AF1F43 /* Kingfisher in Frameworks */,
+				EF0734B46963D28FE437F032 /* Pods_SearchShoping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				0AB151072828D4B400AF1F43 /* SearchShoping */,
 				0AB151062828D4B400AF1F43 /* Products */,
+				8461D2E59FE9E7DE1A7DDE13 /* Pods */,
+				C821640D4D3FED974814054B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = SearchShoping;
 			sourceTree = "<group>";
 		};
+		8461D2E59FE9E7DE1A7DDE13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD6F5D374111F700FB4647 /* Pods-SearchShoping.debug.xcconfig */,
+				E8E6BF7A01EFC3120381E260 /* Pods-SearchShoping.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C821640D4D3FED974814054B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7EB0F5E337698E32F6DE44D /* Pods_SearchShoping.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AB151192828D4B600AF1F43 /* Build configuration list for PBXNativeTarget "SearchShoping" */;
 			buildPhases = (
+				CDAEF1D63651B6AAB020235D /* [CP] Check Pods Manifest.lock */,
 				0AB151012828D4B400AF1F43 /* Sources */,
 				0AB151022828D4B400AF1F43 /* Frameworks */,
 				0AB151032828D4B400AF1F43 /* Resources */,
+				2B35C9FBCD96150ED75B9B98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B35C9FBCD96150ED75B9B98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchShoping/Pods-SearchShoping-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchShoping/Pods-SearchShoping-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchShoping/Pods-SearchShoping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAEF1D63651B6AAB020235D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchShoping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AB151012828D4B400AF1F43 /* Sources */ = {
@@ -298,6 +367,7 @@
 		};
 		0AB1511A2828D4B600AF1F43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6BD6F5D374111F700FB4647 /* Pods-SearchShoping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +396,7 @@
 		};
 		0AB1511B2828D4B600AF1F43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E6BF7A01EFC3120381E260 /* Pods-SearchShoping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
